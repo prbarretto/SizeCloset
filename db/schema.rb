@@ -15,21 +15,30 @@ ActiveRecord::Schema.define(version: 20140324145512) do
 
   create_table "categories", force: true do |t|
     t.text     "name"
+    t.integer  "store_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "categories", ["store_id"], name: "index_categories_on_store_id"
 
   create_table "sizes", force: true do |t|
     t.string   "size"
+    t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "sizes", ["category_id"], name: "index_sizes_on_category_id"
+
   create_table "stores", force: true do |t|
     t.text     "name"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "stores", ["user_id"], name: "index_stores_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

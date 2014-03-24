@@ -2,6 +2,7 @@ class CreateStores < ActiveRecord::Migration
   def change
     create_table :stores do |t|
       t.text :name
+      t.references :user, index: true
 
       t.timestamps
     end
