@@ -1,3 +1,30 @@
-<h1>Size Closet</h1>
+<h1>SizeCloset</h1>
+<h3>Keep All Your Clothing Sizes in One Place!</h3>
 
-<%= render 'layouts/form' %>
+<table>
+  <thead>
+    <tr>
+      <th>Store</th>
+      <th>Category</th>
+      <th>Size</th>
+
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @closets.each do |closet| %>
+      <tr>
+        <td><%= closet.store %></td>
+        <td><%= closet.category %></td>
+        <td><%= closet.size %></td>
+        <td><%= link_to 'Show', closet %></td>
+        <td><%= link_to 'Edit', edit_closet_path(closet) %></td>
+        <td><%= link_to 'Destroy', closet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Closet Item', new_closet_path %>
