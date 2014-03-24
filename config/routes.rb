@@ -1,7 +1,7 @@
 SizeCloset::Application.routes.draw do
-  resources :users
+  resources :closets
   devise_for :users
-  root to: 'users#index'
+  root to: 'closets#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

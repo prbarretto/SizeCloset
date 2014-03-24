@@ -2,7 +2,7 @@ class CreateClosets < ActiveRecord::Migration
   def change
     create_table :closets do |t|
       t.string :title
-      t.user :references
+      t.references :user, index: true
 
       t.timestamps
     end
