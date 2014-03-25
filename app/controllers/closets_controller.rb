@@ -44,7 +44,7 @@ class ClosetsController < ApplicationController
   def destroy
     @closet.destroy
     respond_to do |format|
-      format.html { redirect_to closet_url }
+      format.html { redirect_to root_path }
       format.json { head :no_content }
     end
   end
