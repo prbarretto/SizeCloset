@@ -60,10 +60,10 @@ class ClosetsController < ApplicationController
   end
 
   def sort_column
-    params[:sort] || "store"
+    Closet.column_names.include?(params[:sort]) ? params[:sort] : "store"
   end
 
   def sort_direction
-    params[:direction] || "asc"
+    %w[asc desc].include?(params[:direction]) ?  params[:direction] : "asc"
   end
 end
