@@ -4,6 +4,8 @@ class CreateClosets < ActiveRecord::Migration
       t.text :store
       t.text :category
       t.string :size
+      t.text :style
+      t.text :note
       t.references :user, index: true
 
       t.timestamps

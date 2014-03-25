@@ -1,7 +1,7 @@
 <%= form_for(@closet) do |f| %>
   <% if @closet.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@closet.errors.count, "error") %> prohibited this closet from being saved:</h2>
+      <h2><%= pluralize(@closet.errors.count, "error") %> prohibited this closet item from being saved:</h2>
 
       <ul>
       <% @closet.errors.full_messages.each do |msg| %>
@@ -20,8 +20,16 @@
     <%= f.text_area :category %>
   </div>
   <div class="field">
+    <%= f.label :style %><br>
+    <%= f.text_area :style %>
+  </div>
+  <div class="field">
     <%= f.label :size %><br>
     <%= f.text_area :size %>
+  </div>
+   <div class="field">
+    <%= f.label :note %><br>
+    <%= f.text_area :note %>
   </div>
   <div class="actions">
     <%= f.submit %>

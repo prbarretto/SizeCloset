@@ -55,6 +55,6 @@ class ClosetsController < ApplicationController
     end
 
   def closet_params
-    params.require(:closet).permit(:id, :user_id, :store, :category, :size)
+    params.require(:closet).permit(:id, :user_id, :store, :category, :size, :style, :note)
   end
 end

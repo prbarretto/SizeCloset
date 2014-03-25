@@ -11,8 +11,18 @@
 </p>
 
 <p>
+  <strong>Style:</strong>
+  <%= @closet.style %>
+</p>
+
+<p>
   <strong>Size:</strong>
   <%= @closet.size %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @closet.note %>
 </p>
 
 <%= link_to 'Edit', edit_closet_path(@closet) %> |

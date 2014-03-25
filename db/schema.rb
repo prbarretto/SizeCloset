@@ -17,6 +17,8 @@ ActiveRecord::Schema.define(version: 20140324215053) do
     t.text     "store"
     t.text     "category"
     t.string   "size"
+    t.text     "style"
+    t.text     "note"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"

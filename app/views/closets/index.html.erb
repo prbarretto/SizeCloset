@@ -6,8 +6,9 @@
     <tr>
       <th>Store</th>
       <th>Category</th>
+      <th>Style</th>
       <th>Size</th>
-
+      <th>Notes</th>
     </tr>
   </thead>
 
@@ -16,7 +17,9 @@
       <tr>
         <td><%= closet.store %></td>
         <td><%= closet.category %></td>
+        <td><%= closet.style %></td>
         <td><%= closet.size %></td>
+        <td><%= closet.note %></td>
         <td><%= link_to 'Show', closet %></td>
         <td><%= link_to 'Edit', edit_closet_path(closet) %></td>
         <td><%= link_to 'Destroy', closet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
