@@ -1,8 +1,9 @@
 class ClosetsController < ApplicationController
   before_action :set_closet, only: [:show, :edit, :update, :destroy]
+  helper_method :sort_column, :sort_direction
 
   def index
-    @closets = Closet.all
+    @closets = Closet.order(sort_column + ' ' + sort_direction)
   end
 
   def show
@@ -56,5 +57,13 @@ class ClosetsController < ApplicationController
 
   def closet_params
     params.require(:closet).permit(:id, :user_id, :store, :category, :size, :style, :note)
+  end
+
+  def sort_column
+    params[:sort] || "store"
+  end
+
+  def sort_direction
+    params[:direction] || "asc"
   end
 end
