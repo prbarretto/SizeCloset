@@ -11,3 +11,26 @@
  *= require_self
  *= require_tree .
  */
+
+@import 'bootstrap';
+
+/*@font-face {
+  font-family: 'TheGirlNextDoor', cursive;
+  src: url('http://fonts.googleapis.com/css?family=The+Girl+Next+Door');
+}*/
+
+body {
+  font-family: 'The Girl Next Door', cursive;
+  color: whitesmoke;
+  // background-image: image-url('closet_pic_1.jpg');
+  // -moz-background-size:cover;
+  // -webkit-background-size:cover;
+  // -o-background-size:cover;
+  // background-size:cover;
+  // background-repeat:no-repeat;
+  background-color: #7AE2C0;
+}
+
+a {
+  color: #D54800;
+}

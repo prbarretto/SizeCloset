@@ -52,8 +52,8 @@ class ClosetsController < ApplicationController
 
   private
   def set_closet
-      @closet = Closet.find(params[:id])
-    end
+    @closet = Closet.find(params[:id])
+  end
 
   def closet_params
     params.require(:closet).permit(:id, :user_id, :store, :category, :size, :style, :note)
