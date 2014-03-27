@@ -23,9 +23,9 @@
         <td><%= closet.size %></td>
         <td><%= closet.note %></td>
         <div class="btn-group">
-          <td><button type="button" class="btn btn-default"><%= link_to 'View', closet %></button></td>
-          <td><button type="button" class="btn btn-default"><%= link_to 'Edit', edit_closet_path(closet) %></button></td>
-          <td><button type="button" class="btn btn-default"><%= link_to 'Delete', closet, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+          <td><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span><%= link_to 'View', closet %></button></td>
+          <td><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span><%= link_to 'Edit', edit_closet_path(closet) %></button></td>
+          <td><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span><%= link_to 'Delete', closet, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
         </div>
       </tr>
     <% end %>
