@@ -21,7 +21,7 @@
 
 body {
   font-family: 'The Girl Next Door', cursive;
-  color: whitesmoke;
+  color: #009086;
   // background-image: image-url('closet_pic_1.jpg');
   // -moz-background-size:cover;
   // -webkit-background-size:cover;
@@ -29,8 +29,23 @@ body {
   // background-size:cover;
   // background-repeat:no-repeat;
   background-color: #7AE2C0;
+  text-align: center;
 }
 
 a {
   color: #D54800;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFB189;
+  text-decoration: none;
+}
+
+td,th {
+  text-align: center;
+}
+
+.container {
+  text-align: center;
 }
