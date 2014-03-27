@@ -22,9 +22,11 @@
         <td><%= closet.style %></td>
         <td><%= closet.size %></td>
         <td><%= closet.note %></td>
-        <td><%= link_to 'View', closet %></td>
-        <td><%= link_to 'Edit', edit_closet_path(closet) %></td>
-        <td><%= link_to 'Delete', closet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <div class="btn-group">
+          <td><button type="button" class="btn btn-default"><%= link_to 'View', closet %></button></td>
+          <td><button type="button" class="btn btn-default"><%= link_to 'Edit', edit_closet_path(closet) %></button></td>
+          <td><button type="button" class="btn btn-default"><%= link_to 'Delete', closet, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+        </div>
       </tr>
     <% end %>
   </tbody>
