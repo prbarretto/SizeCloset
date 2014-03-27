@@ -1,29 +1,14 @@
-<p id="notice"><%= notice %></p>
+<h3>Closet Item <%= @closet.id %> updated</h3>
 
-<p>
-  <strong>Store:</strong>
-  <%= @closet.store %>
-</p>
+<p>Store: <%= @closet.store %></p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @closet.category %>
-</p>
+<p>Category: <%= @closet.category %></p>
 
-<p>
-  <strong>Style:</strong>
-  <%= @closet.style %>
-</p>
+<p>Style: <%= @closet.style %></p>
 
-<p>
-  <strong>Size:</strong>
-  <%= @closet.size %>
-</p>
+<p>Size: <%= @closet.size %></p>
 
-<p>
-  <strong>Notes:</strong>
-  <%= @closet.note %>
-</p>
+<p>Notes: <%= @closet.note %></p>
 
 <%= link_to 'Edit', edit_closet_path(@closet) %> |
 <%= link_to 'Home', root_path %>
