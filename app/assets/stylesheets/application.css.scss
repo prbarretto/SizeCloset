@@ -14,26 +14,19 @@
 
 @import 'bootstrap';
 
-/*@font-face {
-  font-family: 'TheGirlNextDoor', cursive;
-  src: url('http://fonts.googleapis.com/css?family=The+Girl+Next+Door');
-}*/
+.container {
+  max-width: 700px;
+}
 
 body {
-  font-family: 'The Girl Next Door', cursive;
+  font-family: 'Glass Antiqua', cursive;
   color: #009086;
-  // background-image: image-url('closet_pic_1.jpg');
-  // -moz-background-size:cover;
-  // -webkit-background-size:cover;
-  // -o-background-size:cover;
-  // background-size:cover;
-  // background-repeat:no-repeat;
   background-color: #b9f0de;
   text-align: center;
 }
 
 a {
-  color: #D54800;
+  color: #E15D1A;
   text-decoration: none;
 }
 
@@ -47,14 +40,14 @@ td,th {
 }
 
 p {
-  font-size: 16px;
+  font-size: 27px;
 }
 
-.btn.btn-sm{
+.btn.btn-xs{
   // background-color: #77DED6;
   font-size: 13px;
   border: 1px solid rgba(0,0,0,0.5);
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 5px 5px 5px 5px;
   background: rgba(0,0,0,0);
   box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
   -o-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
@@ -62,6 +55,29 @@ p {
   -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
 }
 .container {
+  display: inline-block;
   text-align: center;
   font-size: 16px;
 }
+
+.login {
+  text-align: center;
+  background-color: #009967;
+  color: #ecf0f1;
+  font-size: 17px;
+  height: 30px;
+  padding-top: 5px;
+}
+
+// .nav-ul li {
+//   display: inline-block;
+//   font-size: 80%;
+//   padding: 0 10px;
+//   a {
+//     text-decoration: none;
+//     color: #ecf0f1;
+//     &:hover {
+//       color: #bdc3c7;
+//     }
+//   }
+// }
