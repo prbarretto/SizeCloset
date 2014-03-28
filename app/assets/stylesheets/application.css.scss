@@ -22,7 +22,8 @@
 }
 
 .table {
-  width: 100%;
+  width: auto;
+  background-color: #e3f9f2;
 }
 
 
@@ -34,12 +35,12 @@
 
 .table thead th .asc {
   background-image:image-url('up_arrow.gif');
-  background-color: #e3f9f2;
+
 }
 
 .table thead th .desc {
  background-image:image-url('down_arrow.gif');
- background-color: #e3f9f2;
+
 }
 
 body {
