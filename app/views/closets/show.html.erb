@@ -10,5 +10,8 @@
 
 <p>Notes: <%= @closet.note %></p>
 
+<div class="links">
 <%= link_to 'Edit', edit_closet_path(@closet) %> |
+<%= link_to 'Delete', @closet, method: :delete, data: { confirm: 'Are you sure?' } %> |
 <%= link_to 'Home', root_path %>
+</div>

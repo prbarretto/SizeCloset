@@ -14,6 +14,10 @@
 
 @import 'bootstrap';
 
+.alert {
+  font-size: 18px;
+}
+
 .container {
   max-width: 500px;
   display: inline-block;
@@ -22,8 +26,11 @@
 }
 
 .table {
-  width: auto;
   background-color: #e3f9f2;
+}
+
+.table-body {
+  font-size: 15px;
 }
 
 
@@ -51,6 +58,10 @@ body {
   text-align: center;
 }
 
+.links {
+  font-size: 23px;
+}
+
 a {
   color: #E15D1A;
   text-decoration: none;
@@ -64,12 +75,12 @@ a:hover {
 
 td,th {
   background-color: #e3f9f2;
-  float: center;
+  text-align: center;
   width: 95px;
 }
 
 p {
-  font-size: 27px;
+  font-size: 19px;
 }
 
 .btn.btn-xs{
@@ -86,7 +97,7 @@ p {
 
 
 .login {
-  text-align: center;
+  float: center;
   background-color: #009967;
   color: #ecf0f1;
   font-size: 17px;
@@ -94,10 +105,14 @@ p {
   padding-top: 5px;
 }
 
-@media all and (max-width: 450px) {
-  td,th {
+@media all and (max-width: 500px) {
+  td {
     background-color: #e3f9f2;
     float: left;
-    width: 88px;
+    width: 90px;
+  }
+
+  th {
+    float: left;
   }
 }
