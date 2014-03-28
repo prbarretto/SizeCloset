@@ -13,6 +13,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'bootstrap-sass'
+gem 'twitter-bootstrap-rails'
 gem 'flat-ui-rails'
 gem 'jquery-ui-rails'
 
